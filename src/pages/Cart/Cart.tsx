@@ -21,7 +21,7 @@ const Cart = () => {
     return (
         <Wrapper>
             <Container>
-                <Heading>Корзина</Heading>
+                <Heading>Кошик</Heading>
                 <Line/>
                 {cart.map(p => <CartProduct
                     key={p.id}
