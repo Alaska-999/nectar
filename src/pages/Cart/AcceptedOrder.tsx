@@ -10,7 +10,6 @@ const AcceptedOrder = () => {
     return (
         <Wrapper>
             <Container>
-
                 <Background/>
                 <Info>
                     <Image src={success}/>
@@ -37,10 +36,11 @@ const Wrapper = styled.div`
 `
 const Image = styled.img`
   z-index: 100;
+  margin-right: 30px;
 `
 
 const Info = styled.div`
-  margin-top: 160px;
+  margin-top: 10px;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ const Heading = styled.h3`
 `
 
 const Text = styled.div`
-  margin: 20px 0 100px;
+  margin: 20px 0 60px;
 `
 const ButtonWrapper = styled(Link)`
  width: 100%;
