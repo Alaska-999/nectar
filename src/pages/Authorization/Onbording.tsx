@@ -36,9 +36,12 @@ const Background = styled.div`
 const Content = styled.div`
   height: 40%;
   max-width: 350px;
-  //margin-bottom: 60px;
   color: var(--white);
   text-align: center;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  left: 50px;
 `
 const Logo = styled.img`
   margin-bottom: 20px;
@@ -61,6 +64,5 @@ const Info = styled.div`
   font-weight: 400;
   color: var(--white);
 `
-
 
 export default Onbording;
