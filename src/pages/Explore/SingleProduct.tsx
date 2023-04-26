@@ -98,9 +98,9 @@ const SingleProduct: FC<IProduct> = ({
                 </Row>
                 <Line/>
                 <Details>
-                    <DetailsRow>
+                    <DetailsRow onClick={() => setActiveDetails(!activeDetails)}>
                         <Subtitle>Детальніше про продукт</Subtitle>
-                        <Down onClick={() => setActiveDetails(!activeDetails)}/>
+                        <Down/>
                     </DetailsRow>
                     {activeDetails ?
                         <DetailsContent>{details}</DetailsContent>
@@ -110,9 +110,9 @@ const SingleProduct: FC<IProduct> = ({
                 </Details>
                 <Line/>
                 <Details>
-                    <DetailsRow>
+                    <DetailsRow onClick={() => setActiveNutritious(!activeNutritious)}>
                         <Subtitle>Поживна цінність</Subtitle>
-                        <Down onClick={() => setActiveNutritious(!activeNutritious)}/>
+                        <Down/>
                     </DetailsRow>
                     {activeNutritious ?
                         <DetailsContent>

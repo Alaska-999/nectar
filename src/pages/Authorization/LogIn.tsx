@@ -198,7 +198,6 @@ export const RedirectWrapper = styled.div`
   margin-top: 40px;
   text-align: center;
   font-size: 20px;
-
 `
 
 export const Redirect = styled(Link)`
