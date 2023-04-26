@@ -21,7 +21,7 @@ const Navigation = () => {
             </Nav>
             <Nav activeclassname="active" to='/cart'>
                 <Icon icon={cart}/>
-                Корзина
+                Кошик
             </Nav>
             <Nav activeclassname="active" to='/favourites'>
                 <Icon icon={fav}/>
