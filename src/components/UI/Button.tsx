@@ -17,10 +17,7 @@ const Button = styled.button<ButtonProps>`
   font-family: "Roboto-Medium", sans-serif;
   color: #fff;
   transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #6FAE79;
-  }
+  
   
   & + & {
     margin-top: 40px;

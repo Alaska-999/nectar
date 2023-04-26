@@ -203,8 +203,8 @@ export const RedirectWrapper = styled.div`
 
 export const Redirect = styled(Link)`
   text-decoration: none;
-  color: var(--green)
-
+  color: var(--green);
+  font-family: "Roboto-Medium", sans-serif;
 `
 
 
