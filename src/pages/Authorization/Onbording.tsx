@@ -39,7 +39,7 @@ const Content = styled.div`
   color: var(--white);
   text-align: center;
   position: absolute;
-  bottom: 140px;
+  bottom: 200px;
   right: 50px;
   left: 50px;
 `
