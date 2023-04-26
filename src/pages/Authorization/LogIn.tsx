@@ -131,7 +131,7 @@ export const Content = styled.div`
 export const Logo = styled.img`
   width: 47px;
   height: 55px;
-  margin: 25px auto 100px;
+  margin: 25px auto 40px;
   z-index: 10;
 `
 
@@ -148,7 +148,7 @@ export const Info = styled.div`
 `
 
 export const Form = styled.form`
-
+  z-index: 10;
 `
 
 export const ErrorMessage = styled.div`
@@ -185,7 +185,7 @@ export const Eye = styled.button`
   background-color: transparent;
   cursor: pointer;
   position: sticky;
-  bottom: 480px;
+  bottom: 580px;
   left: 2000px;
   padding-right: 30px;
 

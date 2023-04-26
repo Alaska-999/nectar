@@ -17,7 +17,6 @@ const Onbording: FC = () => {
                     <ButtonLink to='/auth'>
                         <Button>Розпочати</Button>
                     </ButtonLink>
-
                 </Content>
             </Container>
         </Background>
@@ -29,7 +28,7 @@ const Background = styled.div`
   height: 100vh;
   background-image: url(${bg});
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -37,7 +36,7 @@ const Background = styled.div`
 const Content = styled.div`
   height: 40%;
   max-width: 350px;
-  margin-bottom: 60px;
+  //margin-bottom: 60px;
   color: var(--white);
   text-align: center;
 `
@@ -55,7 +54,7 @@ const Heading = styled.div`
 export const ButtonLink = styled(Link)`
   text-decoration: none;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `
 const Info = styled.div`
   margin: 20px 0;

@@ -39,7 +39,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 450px auto 0;
+  margin: 340px auto 0;
 `
 
 const Caption = styled.h3`

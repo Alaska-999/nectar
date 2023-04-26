@@ -9,6 +9,7 @@ import avatar from '/assets/images/userAvatar.png'
 import {useTypedSelector} from "../hooks/useTypedSelector";
 // import {Background} from "./Authorization/Auth";
 import support from '/assets/images/telegram.png'
+import {Background} from "./Authorization/LogIn";
 
 const Account = () => {
 
@@ -24,7 +25,7 @@ const Account = () => {
 
     return (
         <Container>
-            {/*<Background/>*/}
+            <Background/>
             <Content>
                 <UserInfo>
                     <Avatar src={avatar}/>
@@ -44,6 +45,7 @@ const Account = () => {
 
 const Content = styled.div`
  position: relative;
+  z-index: 10;
 
 `
 const UserInfo = styled.div`
