@@ -1,0 +1,821 @@
+{
+  "user": {
+    "id": 1,
+    "username": "Крістіна",
+    "location": "Kyiv",
+    "email": "kristinagaranchuk@gmail.com"
+  },
+
+  "products": [
+    {
+      "id" : 1,
+      "name": "Кіноа мікс",
+      "amount": "100г",
+      "details": "Кіноа - це зерна Південноамериканського злаку. Виростає на схилах Анд в Південній Америці. У давнину Кіноа була одним з основних страв інків, і називали вони цей злак «золотим» або «божественним зерном».",
+      "nutritious": {
+        "proteins": "14,1",
+        "fats": "6,1",
+        "carbohydrates": "64,1",
+        "calorieContent": "368"
+      },
+      "image": "/assets/products/beans/kinoa.jpg",
+      "category": "beans",
+      "price": 30
+    },
+    {
+      "id" : 2,
+      "name": "Червона квасоля",
+      "amount": "100г",
+      "details": "Квасоля знаменита своїми дієтичними властивостями і високою поживністю.Вміст калію, заліза, кальцію і магнію, а міді і цинку в квасолі більше, ніж в більшості інших овочів.",
+      "nutritious": {
+        "proteins": "24",
+        "fats": "0,5",
+        "carbohydrates": "60",
+        "calorieContent": "322"
+      },
+      "image": "/assets/products/beans/kvasolya.jpg",
+      "category": "beans",
+      "price": 30
+    },
+    {
+      "id" : 3,
+      "name": "Чорна квасоля",
+      "amount": "100г",
+      "details": "Чорна квасоля містить велику кількість білка, вуглеводів і мікроелементів, таких як залізо, кальцій та магній. Вона також багата на розчинні волокна, які сприяють підтриманню здорового травлення.",
+      "nutritious": {
+        "proteins": "21,6",
+        "fats": "0,9",
+        "carbohydrates": "52,3",
+        "calorieContent": "309"
+      },
+      "image": "/assets/products/beans/kvasolya_black.jpg",
+      "category": "beans",
+      "price": 35
+    },
+    {
+      "id" : 4,
+      "name": "Біла квасоля",
+      "amount": "100г",
+      "details": "Біла квасоля - дуже корисна страва, яка містить багато білка, вуглеводів та важливих вітамінів та мінералів. Вона допомагає знижувати рівень цукру в крові, а також рівень холестерину, тому рекомендується вживати її людям з діабетом і серцево-судинними захворюваннями.",
+      "nutritious": {
+        "proteins": "22",
+        "fats": "0,5",
+        "carbohydrates": "60",
+        "calorieContent": "327"
+      },
+      "image": "/assets/products/beans/kvasolya_white.jpg",
+      "category": "beans",
+      "price": 35
+    },
+    {
+      "id" : 5,
+      "name": "Маш",
+      "amount": "100г",
+      "details": "Маш - це чудовий джерело білка, заліза та вуглеводів. Вона містить багато рослинної клітковини, яка допомагає знижувати рівень холестерину в крові та покращує роботу шлунково-кишкового тракту.",
+      "nutritious": {
+        "proteins": "23,7",
+        "fats": "1,7",
+        "carbohydrates": "54,7",
+        "calorieContent": "323"
+      },
+      "image": "/assets/products/beans/mash.jpg",
+      "category": "beans",
+      "price": 40
+    },
+    {
+      "id" : 6,
+      "name": "Боби мунг",
+      "amount": "100г",
+      "details": "Боби мунг є джерелом багатої поживної рослинної білки, багаті на вуглеводи та вітаміни групи В. Вони містять багато фітонутрієнтів, зокрема каротиноїдів та флавоноїдів.",
+      "nutritious": {
+        "proteins": "23,9",
+        "fats": "1,2",
+        "carbohydrates": "60,1",
+        "calorieContent": "347"
+      },
+      "image": "/assets/products/beans/mungBean.png",
+      "category": "beans",
+      "price": 35
+    },
+    {
+      "id" : 7,
+      "name": "Ожина",
+      "amount": "300г",
+      "details": "Ожина - це багатий джерело вітаміну С, калію та міді. Вона містить також фенольні сполуки, які мають антиоксидантні властивості та позитивний вплив на здоров'я серця та судин.",
+      "nutritious": {
+        "proteins": "1,4",
+        "fats": "0,5",
+        "carbohydrates": "4,3",
+        "calorieContent": "28"
+      },
+      "image": "/assets/products/berries/blackberry.png",
+      "category": "berries",
+      "price": 40
+    },
+    {
+      "id" : 8,
+      "name": "Чорниця",
+      "amount": "300г",
+      "details": "Чорниця є джерелом антиоксидантів, флавоноїдів та вітаміну С. Вона допомагає знижувати ризик розвитку серцево-судинних захворювань, поліпшує зір, а також підтримує здоров'я нирок.",
+      "nutritious": {
+        "proteins": "0,7",
+        "fats": "0,3",
+        "carbohydrates": "7,6",
+        "calorieContent": "44"
+      },
+      "image": "/assets/products/berries/blueberries.png",
+      "category": "berries",
+      "price": 100
+    },
+    {
+      "id" : 9,
+      "name": "Вишні",
+      "amount": "300г",
+      "details": "Вишні містять багато вітамінів та мінералів, зокрема вітамінів С, А, К та калію. Вони мають антиоксидантні властивості та допомагають знижувати запалення в організмі.",
+      "nutritious": {
+        "proteins": "1",
+        "fats": "0,3",
+        "carbohydrates": "12",
+        "calorieContent": "52"
+      },
+      "image": "/assets/products/berries/cherry.png",
+      "category": "berries",
+      "price": 60
+    },
+    {
+      "id" : 10,
+      "name": "Смородина",
+      "amount": "300г",
+      "details": "Смородина містить вітаміни С, А та К, калій та магній. Вона покращує роботу серцево-судинної та нервової систем, допомагає знижувати вагу, а також має протизапальні властивості.",
+      "nutritious": {
+        "proteins": "1,3",
+        "fats": "0,4",
+        "carbohydrates": "7,3",
+        "calorieContent": "44"
+      },
+      "image": "/assets/products/berries/currant.png",
+      "category": "berries",
+      "price": 50
+    },
+    {
+      "id" : 11,
+      "name": "Виноград білий",
+      "amount": "500г",
+      "details": "Білий виноград має сладкий смак і тонку кислинку. Він містить вітаміни А, С, Е, К і групу В, а також кальцій, магній, калій і залізо.",
+      "nutritious": {
+        "proteins": "0,72",
+        "fats": "0,16",
+        "carbohydrates": "17,15",
+        "calorieContent": "69"
+      },
+      "image": "/assets/products/fruits/grapes.png",
+      "category": "fruits",
+      "price": 150
+    },
+    {
+      "id" : 12,
+      "name": "Виноград червоний",
+      "amount": "500г",
+      "details": "Червоний виноград має насичений смак і аромат. Він містить вітаміни А, С, Е, К і групу В, а також кальцій, магній, калій і залізо.",
+      "nutritious": {
+        "proteins": "0,72",
+        "fats": "0,16",
+        "carbohydrates": "17,15",
+        "calorieContent": "69"
+      },
+      "image": "/assets/products/fruits/redGrapes.png",
+      "category": "fruits",
+      "price": 90
+    },
+    {
+      "id" : 13,
+      "name": "Кізіл",
+      "amount": "200г",
+      "details": "Кізіл - це ягода, яка містить вітаміни А, С, Е, К і групу В, а також кальцій, магній, калій і залізо. Вона має кислу смак і використовується для приготування мармеладу, варення і соку.",
+      "nutritious": {
+        "proteins": "1,3",
+        "fats": "0,2",
+        "carbohydrates": "7,2",
+        "calorieContent": "38"
+      },
+      "image": "/assets/products/berries/kizil.png",
+      "category": "berries",
+      "price": 30
+    },
+    {
+      "id" : 14,
+      "name": "Малина",
+      "amount": "300г",
+      "details": "Малина - це ягода, яка містить вітаміни А, С, Е, К і групу В, а також кальцій, магній, калій і залізо. Вона має солодкий смак і використовується для приготування десертів, варення і соку.",
+      "nutritious": {
+        "proteins": "1,2",
+        "fats": "0,7",
+        "carbohydrates": "7,3",
+        "calorieContent": "43"
+      },
+      "image": "/assets/products/berries/raspberry.png",
+      "category": "berries",
+      "price": 50
+    },
+    {
+      "id" : 15,
+      "name": "Полуниця",
+      "amount": "300г",
+      "details": "Полуниця - це невисокий рослинний вид з роду Полуниця родини Виноградових. Ягоди полуниці містять вітамін С, каротиноїди, квасолю, органічні кислоти, мінеральні солі.",
+      "nutritious": {
+        "proteins": "0,7",
+        "fats": "0,5",
+        "carbohydrates": "7,5",
+        "calorieContent": "35"
+      },
+      "image": "/assets/products/berries/strawberries.png",
+      "category": "berries",
+      "price": 60
+    },
+    {
+      "id" : 16,
+      "name": "Червоні яблука",
+      "amount": "1 кг",
+      "details": "Яблука дуже корисні для здоров'я. Вони містять велику кількість антиоксидантів та вітаміну C. Яблука також містять пектин, який підтримує здоров'я кишечника.",
+      "nutritious": {
+        "proteins": "0.3 г",
+        "fats": "0.4 г",
+        "carbohydrates": "9.8 г",
+        "calorieContent": "46 ккал"
+      },
+      "image": "/assets/products/fruits/apple.png",
+      "category": "fruits",
+      "price": 35
+    },
+    {
+      "id" : 17,
+      "name": "Зелені яблука",
+      "amount": "1 кг",
+      "details": "Яблука дуже корисні для здоров'я. Вони містять велику кількість антиоксидантів та вітаміну C. Яблука також містять пектин, який підтримує здоров'я кишечника.",
+      "nutritious": {
+        "proteins": "0.3 г",
+        "fats": "0.4 г",
+        "carbohydrates": "9.8 г",
+        "calorieContent": "46 ккал"
+      },
+      "image": "/assets/products/fruits/greenApples.png",
+      "category": "fruits",
+      "price": 35
+    },
+    {
+      "id" : 18,
+      "name": "Гранат",
+      "amount": "1 шт",
+      "details": "Гранат містить велику кількість вітамінів та мікроелементів. Він містить антоціани та флавоноїди, які мають антиоксидантні властивості, що допомагає боротися зі стресом.",
+      "nutritious": {
+        "proteins": "1.7 г",
+        "fats": "1.2 г",
+        "carbohydrates": "17.2 г",
+        "calorieContent": "83 ккал"
+      },
+      "image": "/assets/products/fruits/granat.png",
+      "category": "fruits",
+      "price": 50
+    },
+    {
+      "id" : 19,
+      "name": "Лимон",
+      "amount": "1 шт",
+      "details": "Лимон містить велику кількість вітаміну C, калію та флавоноїдів. Він допомагає зміцнити імунну систему та боротися зі стресом.",
+      "nutritious": {
+        "proteins": "1,1 г",
+        "fats": "0,3 г",
+        "carbohydrates": "3 г",
+        "calorieContent": "17 ккал"
+      },
+      "image": "/assets/products/fruits/lemon.png",
+      "category": "fruits",
+      "price": 20
+    },
+    {
+      "id" : 20,
+      "name": "Манго",
+      "amount": "1 шт",
+      "details": "Манго містить велику кількість вітамінів A, C та E, калію та антиоксидантів. Він допомагає покращити зір, зміцнити імунну систему та захистити шкіру від старіння.",
+      "nutritious": {
+        "proteins": "0,8 г",
+        "fats": "0,3 г",
+        "carbohydrates": "14 г",
+        "calorieContent": "65 ккал"
+      },
+      "image": "/assets/products/fruits/mango.png",
+      "category": "fruits",
+      "price": 50
+    },
+    {
+      "id" : 21,
+      "name": "Диня",
+      "amount": "1 шт",
+      "details": "Диня містить велику кількість вітамінів A, C та E, калію та фолієвої кислоти. Вона допомагає покращити зір, зміцнити імунну систему та захистити шкіру від ушкоджень.",
+      "nutritious": {
+        "proteins": "0,6 г",
+        "fats": "0,2 г",
+        "carbohydrates": "7 г",
+        "calorieContent": "34 ккал"
+      },
+      "image": "/assets/products/fruits/melon.png",
+      "category": "fruits",
+      "price": 200
+    },
+    {
+      "id" : 22,
+      "name": "Груша",
+      "amount": "1 шт",
+      "details": "Груша містить велику кількість вітамінів С та K, калію та дієтичних волокон. Вона допомагає зміцнити імунну систему, покращити роботу серця та нормалізувати травлення.",
+      "nutritious": {
+        "proteins": "0,4 г",
+        "fats": "0,1 г",
+        "carbohydrates": "10 г",
+        "calorieContent": "42 ккал"
+      },
+      "image": "/assets/products/fruits/pear.png",
+      "category": "fruits",
+      "price": 20
+    },
+    {
+      "id" : 23,
+      "name": "Авокадо",
+      "amount": "1 шт",
+      "details": "Авокадо містить багато здорових жирів, вітамінів та мінералів, таких як вітамін К, вітамін Е, вітамін С, калій та фолієва кислота. Він допомагає знижувати ризик захворювань серця та покращує здоров'я шкіри.",
+      "nutritious": {
+        "proteins": "2 г",
+        "fats": "15 г",
+        "carbohydrates": "9 г",
+        "calorieContent": "160 ккал"
+      },
+      "image": "/assets/products/fruits/avocado.png",
+      "category": "fruits",
+      "price": 50
+    },
+    {
+      "id" : 24,
+      "name": "Мандарин",
+      "amount": "1 шт",
+      "details": "Мандарин містить велику кількість вітамінів C та A, калію та антиоксидантів. Він допомагає зміцнити імунну систему, знизити ризик розвитку хвороб серця та нормалізувати травлення.",
+      "nutritious": {
+        "proteins": "0,8 г",
+        "fats": "0,2 г",
+        "carbohydrates": "13 г",
+        "calorieContent": "53 ккал"
+      },
+      "image": "/assets/products/fruits/tangerine.png",
+      "category": "fruits",
+      "price": 10
+    },
+    {
+      "id" : 25,
+      "name": "Ядра абрикосових кісточок",
+      "amount": "100 г",
+      "details": "Абрикосові кісточки багаті на вітамін В17, який має протипухлинну дію та допомагає підвищити імунітет.",
+      "nutritious": {
+        "proteins": "5,2 г",
+        "fats": "59,3 г",
+        "carbohydrates": "20,7 г",
+        "calorieContent": "634 ккал"
+      },
+      "image": "/assets/products/nuts/abricos.jpg",
+      "category": "nuts",
+      "price": 100
+    },
+    {
+      "id" : 26,
+      "name": "Бразильський горіх",
+      "amount": "100 г",
+      "details": "Бразильський горіх містить велику кількість селену, який покращує здоров'я серця та мозку.",
+      "nutritious": {
+        "proteins": "14,3 г",
+        "fats": "66,4 г",
+        "carbohydrates": "12,3 г",
+        "calorieContent": "656 ккал"
+      },
+      "image": "/assets/products/nuts/brazil.jpg",
+      "category": "nuts",
+      "price": 80
+    },
+    {
+      "id" : 27,
+      "name": "Фісташки чищені",
+      "amount": "100 г",
+      "details": "Фісташки містять велику кількість білка та фітостеролів, які покращують здоров'я серця.",
+      "nutritious": {
+        "proteins": "20 г",
+        "fats": "45 г",
+        "carbohydrates": "28 г",
+        "calorieContent": "560 ккал"
+      },
+      "image": "/assets/products/nuts/fistashki.jpg",
+      "category": "nuts",
+      "price": 130
+    },
+    {
+      "id" : 28,
+      "name": "Фундук",
+      "amount": "100 г",
+      "details": "Фундук містить велику кількість вітаміну Е, який допомагає зберегти красу та молодість шкіри.",
+      "nutritious": {
+        "proteins": "14,2 г",
+        "fats": "61,2 г",
+        "carbohydrates": "16,7 г",
+        "calorieContent": "704 ккал"
+      },
+      "image": "/assets/products/nuts/funduk.jpg",
+      "category": "nuts",
+      "price": 60
+    },
+    {
+      "id" : 29,
+      "name": "Грецький горіх",
+      "amount": "500 г",
+      "details": "Грецький горіх містить велику кількість омега-3 жирних кислот, які корисні для серця та мозку.",
+      "nutritious": {
+        "proteins": "14 г",
+        "fats": "65 г",
+        "carbohydrates": "14 г",
+        "calorieContent": "654 ккал"
+      },
+      "image": "/assets/products/nuts/greek.jpg",
+      "category": "nuts",
+      "price": 140
+    },
+    {
+      "id" : 30,
+      "name": "Кедровий горіх",
+      "amount": "100 г",
+      "details": "Кедрові горіхи містять багато білків та ненасичених жирів, що допомагає знизити ризик виникнення серцево-судинних захворювань. Крім того, вони містять вітамін Е, магній та фосфор.",
+      "nutritious": {
+        "proteins": "13,3 г",
+        "fats": "63,3 г",
+        "carbohydrates": "16,3 г",
+        "calorieContent": "697 ккал"
+      },
+      "image": "/assets/products/nuts/kedrovij.jpg",
+      "category": "nuts",
+      "price": 220
+    },
+    {
+      "id" : 31,
+      "name": "Кешю",
+      "amount": "100 г",
+      "details": "Кешю містить вітаміни групи В, магній, калій та цинк. Їх споживання може допомогти знизити ризик розвитку діабету та серцево-судинних захворювань.",
+      "nutritious": {
+        "proteins": "18,5 г",
+        "fats": "43,8 г",
+        "carbohydrates": "30,2 г",
+        "calorieContent": "553 ккал"
+      },
+      "image": "/assets/products/nuts/keshju.jpg",
+      "category": "nuts",
+      "price": 115
+    },
+    {
+      "id" : 32,
+      "name": "Макадамія",
+      "amount": "100 г",
+      "details": "Макадамія містить багато мононенасичених жирів, які допомагають знизити ризик виникнення серцево-судинних захворювань та підвищити рівень \"хорошого\" холестерину. Також макадамія містить вітамін В1, магній та марганець.",
+      "nutritious": {
+        "proteins": "7,9 г",
+        "fats": "75,8 г",
+        "carbohydrates": "13,8 г",
+        "calorieContent": "718 ккал"
+      },
+      "image": "/assets/products/nuts/makadamia.jpg",
+      "category": "nuts",
+      "price": 70
+    },
+    {
+      "id" : 33,
+      "name": "Мигдаль",
+      "amount": "100 г",
+      "details": "Мигдаль містить велику кількість білка, вітаміну Е, магнію та кальцію. Він може допомогти знизити ризик виникнення серцево-судинних захворювань та діабету.",
+      "nutritious": {
+        "proteins": "21,2 г",
+        "fats": "49,4 г",
+        "carbohydrates": "21,7 г",
+        "calorieContent": "575 ккал"
+      },
+      "image": "/assets/products/nuts/mindal.jpg",
+      "category": "nuts",
+      "price": 50
+    },
+    {
+      "id" : 34,
+      "name": "Пекан",
+      "amount": "100 г",
+      "details": "Пекан - це джерело здорових жирів, білків, вітамінів та мінералів. Він також знижує ризик захворювань серця і цукрового діабету.",
+      "nutritious": {
+        "proteins": "3,6 г",
+        "fats": "72 г",
+        "carbohydrates": "14 г",
+        "calorieContent": "691 ккал"
+      },
+      "image": "/assets/products/nuts/pekan.jpg",
+      "category": "nuts",
+      "price": 115
+    },
+    {
+      "id" : 35,
+      "name": "Гарбузова олія 200мл",
+      "amount": "1 шт",
+      "details": "Гарбузова олія містить велику кількість корисних жирів та вітамінів, зокрема вітаміну E. Вона підвищує імунітет, допомагає знизити рівень холестерину в крові та має протизапальні властивості.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "99,9 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "899 ккал"
+      },
+      "image": "/assets/products/oil/garbuzova-oliya.jpg",
+      "category": "oils",
+      "price": 115
+    },
+    {
+      "id" : 36,
+      "name": "Кедрова олія 100мл",
+      "amount": "1 шт",
+      "details": "Кедрова олія містить велику кількість корисних жирів, амінокислот та вітамінів групи В. Вона має протизапальні властивості, сприяє зниженню рівня холестерину в крові та покращує стан нервової системи.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "99,8 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "897 ккал"
+      },
+      "image": "/assets/products/oil/kedrova-oliya.jpg",
+      "category": "oils",
+      "price": 200
+    },
+    {
+      "id" : 37,
+      "name": "Кокосова олія рафінована 500мл",
+      "amount": "1 шт",
+      "details": "Кокосова олія містить велику кількість жирів, які легко засвоюються організмом, а також містить вітаміни групи В та Е. Вона підвищує імунітет, покращує стан шкіри та волосся, сприяє зниженню рівня холестерину в крові.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "100 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "900 ккал"
+      },
+      "image": "/assets/products/oil/kokosova-oliya.jpg",
+      "category": "oils",
+      "price": 120
+    },
+    {
+      "id" : 38,
+      "name": "Кунжутна олія 200мл",
+      "amount": "1 шт",
+      "details": "Кунжутна олія багата на ненасичені жирні кислоти, антиоксиданти та вітаміни групи В. Вона корисна для покращення здоров'я шкіри, волосся та нігтів.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "13,6 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "120 ккал"
+      },
+      "image": "/assets/products/oil/kunzhutna-oliya.jpg",
+      "category": "oils",
+      "price": 120
+    },
+    {
+      "id" : 39,
+      "name": "Льняна олія 200мл",
+      "amount": "1 шт",
+      "details": "Льняна олія містить велику кількість омега-3 жирних кислот, які корисні для підтримки здоров'я серця та судин. Вона також містить антиоксиданти та вітаміни групи В.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "14 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "120 ккал"
+      },
+      "image": "/assets/products/oil/lnyana-oliya.jpg",
+      "category": "oils",
+      "price": 60
+    },
+    {
+      "id" : 40,
+      "name": "Оливкова олія 5л",
+      "amount": "1 шт",
+      "details": "Оливкова олія містить велику кількість ненасичених жирних кислот та вітаміну Е, який допомагає підтримувати здоров'я шкіри. Вона також може знижувати ризик виникнення серцево-судинних захворювань.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "100 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "900 ккал"
+      },
+      "image": "/assets/products/oil/olivkova-oliya.jpg",
+      "category": "oils",
+      "price": 485
+    },
+    {
+      "id" : 41,
+      "name": "Олія чорного кмину 100 мл",
+      "amount": "1 шт",
+      "details": "Олія чорного кмину містить тімохінову кислоту, яка може знижувати запалення в організмі. Вона також корисна для підтримки здоров'я шкіри та волосся.",
+      "nutritious": {
+        "proteins": "0 г",
+        "fats": "99 г",
+        "carbohydrates": "0 г",
+        "calorieContent": "900 ккал"
+      },
+      "image": "/assets/products/oil/oliya-chornogo-kminu.jpg",
+      "category": "oils",
+      "price": 155
+    },
+    {
+      "id" : 42,
+      "name": "Буряк",
+      "amount": "1 шт",
+      "details": "Буряк містить вітаміни групи В, вітамін С та фолієву кислоту. Він сприяє зниженню кров'яного тиску та покращенню пищеварення.",
+      "nutritious": {
+        "proteins": "1,6 г",
+        "fats": "0,1 г",
+        "carbohydrates": "8 г",
+        "calorieContent": "43 ккал"
+      },
+      "image": "/assets/products/veggies/beet.png",
+      "category": "vegetables",
+      "price": 12
+    },
+    {
+      "id" : 43,
+      "name": "Броколі",
+      "amount": "100г",
+      "details": "Броколі містить багато вітамінів та мінералів, таких як вітамін С, вітамін К, кальцій та залізо. Він допомагає зміцнити імунну систему та знижує ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "2,8 г",
+        "fats": "0,4 г",
+        "carbohydrates": "6 г",
+        "calorieContent": "34 ккал"
+      },
+      "image": "/assets/products/veggies/broccoli.png",
+      "category": "vegetables",
+      "price": 18
+    },
+    {
+      "id" : 44,
+      "name": "Морква",
+      "amount": "100г",
+      "details": "Морква містить багато вітамінів та мінералів, таких як бета-каротин, вітамін А та калій. Вона допомагає підтримувати здоров'я очей та знижує ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "0,9 г",
+        "fats": "0,2 г",
+        "carbohydrates": "6 г",
+        "calorieContent": "31 ккал"
+      },
+      "image": "/assets/products/veggies/carrot.png",
+      "category": "vegetables",
+      "price": 5
+    },
+    {
+      "id" : 45,
+      "name": "Капуста цвітна",
+      "amount": "100г",
+      "details": "Капуста цвітна містить велику кількість вітамінів та мінералів, таких як вітамін С, вітамін К, фолієва кислота та кальцій. Вона допомагає зміцнити кістки та знижує ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "2,5 г",
+        "fats": "0,3 г",
+        "carbohydrates": "5 г",
+        "calorieContent": "28 ккал"
+      },
+      "image": "/assets/products/veggies/cauliflower.png",
+      "category": "vegetables",
+      "price": 20
+    },
+    {
+      "id" : 46,
+      "name": "Томати чері",
+      "amount": "250 г",
+      "details": "Томати чері містять багато вітамінів та антиоксидантів, таких як вітамін С та бета-каротин. Вони допомагають зміцнити імунну систему та знижувати ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "1,6 г",
+        "fats": "0,2 г",
+        "carbohydrates": "3,2 г",
+        "calorieContent": "19 ккал"
+      },
+      "image": "/assets/products/veggies/cherryTomat.png",
+      "category": "vegetables",
+      "price": 80
+    },
+    {
+      "id" : 47,
+      "name": "Кукурудза",
+      "amount": "1 шт",
+      "details": "Кукурудза містить багато вітамінів та мінералів, таких як вітамін В1, вітамін В5 та фолієва кислота. Вона допомагає підтримувати здоров'я шкіри та знижує ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "3,2 г",
+        "fats": "1,2 г",
+        "carbohydrates": "18 г",
+        "calorieContent": "86 ккал"
+      },
+      "image": "/assets/products/veggies/corn.png",
+      "category": "vegetables",
+      "price": 45
+    },
+    {
+      "id" : 48,
+      "name": "Огірок",
+      "amount": "100г",
+      "details": "Огірок містить велику кількість води та електролітів, таких як калій та магній. Він допомагає зберігати здоров'я шкіри та знижує ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "0,5 г",
+        "fats": "0,1 г",
+        "carbohydrates": "2,2 г",
+        "calorieContent": "15 ккал"
+      },
+      "image": "/assets/products/veggies/cucumber.png",
+      "category": "vegetables",
+      "price": 25
+    },
+    {
+      "id" : 49,
+      "name": "Корінь імбиру",
+      "amount": "100 г",
+      "details": "Корінь імбиру містить велику кількість гінгеролів, які мають протизапальні та антиоксидантні властивості. Він допомагає знижувати ризик захворювання на деякі види раку та поліпшує перетравлення їжі.",
+      "nutritious": {
+        "proteins": "1,8 г",
+        "fats": "0,8 г",
+        "carbohydrates": "18 г",
+        "calorieContent": "80 ккал"
+      },
+      "image": "/assets/products/veggies/ginger.png",
+      "category": "vegetables",
+      "price": 25
+    },
+    {
+      "id" : 50,
+      "name": "Печериці",
+      "amount": "250 г",
+      "details": "Печериці містять багато білка та джерело вітамінів та мінералів, таких як вітамін D, вітамін В12 та селеній. Вони допомагають зміцнити імунну систему та знижують ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "3,1 г",
+        "fats": "0,3 г",
+        "carbohydrates": "1,5 г",
+        "calorieContent": "22 ккал"
+      },
+      "image": "/assets/products/veggies/mushroom.png",
+      "category": "vegetables",
+      "price": 40
+    },
+    {
+      "id" : 51,
+      "name": "Цибуля",
+      "amount": "100г",
+      "details": "Цибуля містить багато антиоксидантів, таких як кверцетин, а також вітаміни та мінерали, такі як вітамін С та калій. Вона допомагає зміцнити імунну систему та знижує ризик захворювання на деякі види раку.",
+      "nutritious": {
+        "proteins": "0,9 г",
+        "fats": "0,1 г",
+        "carbohydrates": "9,3 г",
+        "calorieContent": "40 ккал"
+      },
+      "image": "/assets/products/veggies/onion.png",
+      "category": "vegetables",
+      "price": 10
+    },
+    {
+      "id" : 52,
+      "name": "Перець червоний",
+      "amount": "1 шт",
+      "details": "Перець червоний містить велику кількість вітамінів та мінералів, таких як вітамін С та калій. Він допомагає зміцнити імунну систему та поліпшує здоров'я шкіри та зрізування.",
+      "nutritious": {
+        "proteins": "1,3 г",
+        "fats": "0,3 г",
+        "carbohydrates": "6,4 г",
+        "calorieContent": "28 ккал"
+      },
+      "image": "/assets/products/veggies/peper.png",
+      "category": "vegetables",
+      "price": 25
+    },
+    {
+      "id" : 53,
+      "name": "Картопля",
+      "amount": "1 кг",
+      "details": "Картопля є джерелом вуглеводів та калію, а також містить вітаміни групи В. Вона допомагає зміцнити імунну систему та забезпечує енергію для організму.",
+      "nutritious": {
+        "proteins": "2,1 г",
+        "fats": "0,1 г",
+        "carbohydrates": "18 г",
+        "calorieContent": "80 ккал"
+      },
+      "image": "/assets/products/veggies/potato.png",
+      "category": "vegetables",
+      "price": 10
+    },
+    {
+      "id" : 54,
+      "name": "Кабачок",
+      "amount": "1 шт",
+      "details": "Кабачок містить велику кількість вітамінів та мінералів, таких як вітамін С та калій. Він допомагає знижувати ризик захворювання на серцево-судинні захворювання та забезпечує здорове травлення.",
+      "nutritious": {
+        "proteins": "1,2 г",
+        "fats": "0,3 г",
+        "carbohydrates": "3,1 г",
+        "calorieContent": "16 ккал"
+      },
+      "image": "/assets/products/veggies/zuccini.png",
+      "category": "vegetables",
+      "price": 18
+    }
+  ]
+}
