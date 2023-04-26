@@ -7,7 +7,7 @@ import {Container} from '../components/UI/Container';
 import styled from "styled-components";
 import avatar from '/assets/images/userAvatar.png'
 import {useTypedSelector} from "../hooks/useTypedSelector";
-import {Background} from "./Authorization/Auth";
+// import {Background} from "./Authorization/Auth";
 import support from '/assets/images/telegram.png'
 
 const Account = () => {
@@ -24,7 +24,7 @@ const Account = () => {
 
     return (
         <Container>
-            <Background/>
+            {/*<Background/>*/}
             <Content>
                 <UserInfo>
                     <Avatar src={avatar}/>
@@ -47,7 +47,7 @@ const Content = styled.div`
 
 `
 const UserInfo = styled.div`
-  margin: 340px auto 10px;
+  margin: 10px auto 10px;
   text-align: center;
   z-index: 10;
 

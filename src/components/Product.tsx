@@ -55,6 +55,7 @@ const ProductItem = styled.div`
   border-radius: 12px;
   position: relative;
   width: 44vw;
+  height: 280px;
 `
 
 const Box = styled(Link)`

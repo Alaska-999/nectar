@@ -13,23 +13,23 @@ const Navigation = () => {
         <NavBar>
             <Nav activeclassname="active" to='/'>
                 <Icon icon={home}/>
-                Shop
+                Головна
             </Nav>
             <Nav activeclassname="active" to='/explore'>
                 <Icon icon={explore}/>
-                Explore
+                Категорії
             </Nav>
             <Nav activeclassname="active" to='/cart'>
                 <Icon icon={cart}/>
-                Cart
+                Корзина
             </Nav>
             <Nav activeclassname="active" to='/favourites'>
                 <Icon icon={fav}/>
-                Favourite
+                Вибране
             </Nav>
             <Nav activeclassname="active" to='/account'>
                 <Icon icon={user}/>
-                Account
+                Акаунт
             </Nav>
         </NavBar>
     );

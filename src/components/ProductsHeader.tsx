@@ -9,7 +9,7 @@ import {useDispatch} from "react-redux";
 import {searchProduct} from "../store/reducers/productsActions";
 
 
-const ProductsHeader:FC<{heading: string}> = ({heading}) => {
+const ProductsHeader:FC = () => {
     const [searchIsActive, searchSetActive] = useState<boolean>(false)
     const searchActiveHandler = () => {
         searchSetActive(!searchIsActive)
@@ -24,7 +24,7 @@ const ProductsHeader:FC<{heading: string}> = ({heading}) => {
         <div>
             <Header>
                 <Back to='/explore'/>
-                <Heading>{heading}</Heading>
+                {/*<Heading>{heading}</Heading>*/}
                 {!searchIsActive ? <SearchBtn onClick={searchActiveHandler}/> :
                     <CloseBtn onClick={searchActiveHandler}/>}
             </Header>

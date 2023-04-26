@@ -20,11 +20,10 @@ const CategoryProducts = () => {
     const filteredProducts = categoryProducts.filter((product) =>
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    console.log(filteredProducts)
 
     return (
         <Container>
-            <ProductsHeader heading='Category'/>
+            <ProductsHeader/>
            <ProductsList products={filteredProducts}/>
         </Container>
     );
