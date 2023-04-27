@@ -13,11 +13,11 @@ import {nanoid} from "nanoid";
 
 const LogIn = () => {
 
-    const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>('');
     const [showPassword, setShowPassword] = useState<boolean>(false);
+    const [phone, setPhone] = useState<string>('');
 
-    const [errorMessageEmail, setErrorMessageEmail] = useState<boolean>(true)
+    const [errorMessagePhone, setErrorMessagePhone] = useState<boolean>(true)
     const [errorMessagePassword, setErrorMessagePassword] = useState<boolean>(true)
     const [error, setError] = useState<boolean>(false)
 
@@ -26,17 +26,17 @@ const LogIn = () => {
         setShowPassword(!showPassword);
     };
 
-    const emailChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.value === '') {
-            setEmail('');
-        } else {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (emailRegex.test(e.target.value)) {
-                setEmail(e.target.value);
-                setErrorMessageEmail(false);
 
+    const phoneChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.value === '') {
+            setPhone('');
+        } else {
+            const phoneRegex = /^\d{10}$/;
+            if (phoneRegex.test(e.target.value)) {
+                setPhone(e.target.value);
+                setErrorMessagePhone(false);
             } else {
-                setErrorMessageEmail(true);
+                setErrorMessagePhone(true);
             }
         }
     }
@@ -60,7 +60,7 @@ const LogIn = () => {
 
     const logInHandler = (e: FormEvent) => {
         e.preventDefault()
-        if (!errorMessageEmail && !errorMessagePassword) {
+        if (!errorMessagePhone && !errorMessagePassword) {
             dispatch(setAuth())
             navigateHome('/')
             const id = Number(nanoid())
@@ -68,7 +68,7 @@ const LogIn = () => {
                 id,
                 'Крістіна Гаранчук',
                 'Kiyv',
-                email
+                '0966735903'
             ))
 
         } else {
@@ -84,13 +84,12 @@ const LogIn = () => {
                 <Heading>Вхід у аккаунт</Heading>
                 <Info>Введіть свою електронну пошту та пароль</Info>
                 <Form onSubmit={logInHandler}>
-                    <Label>Email
-                        <Input onChange={emailChangeHandler} type='text'/>
+                    <Label>Номер телефону
+                        <Input onChange={phoneChangeHandler} type='text'/>
                         {
-                            error && errorMessageEmail ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
+                            error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
                     </Label>
-
                     <Label>Пароль
                         <Input type={showPassword ? 'text' : 'password'} onChange={passwordChangeHandler}/>
 

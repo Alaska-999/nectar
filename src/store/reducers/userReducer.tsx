@@ -8,7 +8,7 @@ const initialState: UserState = {
         id: null,
         username: '',
         location: '',
-        email: ''
+        phone: ''
     }
 
 }
@@ -27,7 +27,7 @@ export const userReducer = (state = initialState, action: userActionTypes) => {
                     id: action.payload.id,
                     username: action.payload.username,
                     location: action.payload.location,
-                    email: action.payload.email
+                    phone: action.payload.phone
                 }
             }
         case LOG_OUT:
@@ -38,7 +38,7 @@ export const userReducer = (state = initialState, action: userActionTypes) => {
                     id: null,
                     username: '',
                     location: '',
-                    email: ''
+                    phone: ''
                 }
             }
 

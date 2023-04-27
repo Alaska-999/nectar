@@ -23,14 +23,14 @@ import {useDispatch} from "react-redux";
 const SignIn = () => {
 
     const [username, setUsername] = useState<string>("");
-    const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>('');
+    const [phone, setPhone] = useState<string>('');
 
     const [showPassword, setShowPassword] = useState<boolean>(false);
 
     const [errorMessageUsername, setErrorMessageUsername] = useState<boolean>(true)
-    const [errorMessageEmail, setErrorMessageEmail] = useState<boolean>(true)
     const [errorMessagePassword, setErrorMessagePassword] = useState<boolean>(true)
+    const [errorMessagePhone, setErrorMessagePhone] = useState<boolean>(true)
     const [error, setError] = useState<boolean>(false)
 
     const handleToggleShowPassword = () => {
@@ -51,21 +51,6 @@ const SignIn = () => {
         }
     }
 
-    const emailChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.value === '') {
-            setEmail('');
-        } else {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (emailRegex.test(e.target.value)) {
-                setEmail(e.target.value);
-                setErrorMessageEmail(false);
-
-            } else {
-                setErrorMessageEmail(true);
-            }
-        }
-    }
-
     const passwordChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.value === '') {
             setPassword('');
@@ -80,12 +65,26 @@ const SignIn = () => {
         }
     }
 
+    const phoneChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.value === '') {
+            setPhone('');
+        } else {
+            const phoneRegex = /^\d{10}$/;
+            if (phoneRegex.test(e.target.value)) {
+                setPhone(e.target.value);
+                setErrorMessagePhone(false);
+            } else {
+                setErrorMessagePhone(true);
+            }
+        }
+    }
+
     const navigateHome = useNavigate()
     const dispatch = useDispatch()
 
     const signUpHandler = (e: FormEvent) => {
         e.preventDefault()
-        if (!errorMessageEmail && !errorMessagePassword && !errorMessageUsername) {
+        if (!errorMessagePassword && !errorMessageUsername && !errorMessagePhone) {
             dispatch(setAuth())
             navigateHome('/')
             const id = Number(nanoid())
@@ -93,7 +92,7 @@ const SignIn = () => {
                 id,
                 username,
                 'Kiyv',
-                email
+                phone
             ))
         } else {
             setError(true)
@@ -115,14 +114,12 @@ const SignIn = () => {
                             error && errorMessageUsername ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
                     </Label>
-
-                    <Label>Email
-                        <Input onChange={emailChangeHandler} type='text'/>
+                    <Label>Номер телефону
+                        <Input onChange={phoneChangeHandler} type='text'/>
                         {
-                            error && errorMessageEmail ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
+                            error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
                     </Label>
-
                     <Label>Пароль
                         <Input type={showPassword ? 'text' : 'password'} onChange={passwordChangeHandler}/>
 

@@ -9,7 +9,7 @@ export interface IUser {
     id: number | null,
     username: string,
     location: string,
-    email: string
+    phone: string
 }
 
 export interface IProductShort {

@@ -23,6 +23,8 @@ const Account = () => {
         navigate('/auth')
     }
 
+    console.log(user.phone)
+
     return (
         <Container>
             <Background/>
@@ -30,6 +32,7 @@ const Account = () => {
                 <UserInfo>
                     <Avatar src={avatar}/>
                     <UserName>{user.username}</UserName>
+                    <Phone>+38{user.phone}</Phone>
                     <Email>{user.email}</Email>
                 </UserInfo>
                 <Button onClick={logOutHandler}>Вийти з аккаунту</Button>
@@ -69,6 +72,12 @@ const UserName = styled.div`
 const Email = styled.div`
   margin-bottom: 25px;
   font-size: 20px;
+`
+
+const Phone = styled.div`
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
 `
 
 const Support = styled.div`

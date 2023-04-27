@@ -15,7 +15,8 @@ export const logOut = () => ({
 export const setUser = ( id: number | null,
                          username: string,
                          location: string,
-                         email: string) => ({
+                         phone: string
+                         ) => ({
     type: SET_USER,
-    payload: {id, username, location, email}
+    payload: {id, username, location, phone}
 })
