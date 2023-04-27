@@ -58,6 +58,7 @@ const SingleProduct: FC<IProduct> = ({
                 price,
                 quantity: counter
             }))
+            setCounter(1)
         } else {
             console.log('error')
         }
