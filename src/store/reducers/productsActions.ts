@@ -1,4 +1,4 @@
-import {ICartProduct, IProduct, IProductLink, IUser} from "../../types/types";
+import {ICartProduct, IProduct, IProductLink} from "../../types/types";
 
 export const ADD_PRODUCTS = 'ADD_PRODUCTS';
 export const GET_CURRENT_USER = 'GET_CURRENT_USER';
@@ -13,10 +13,6 @@ export const REMOVE_FROM_FAVOURITES = "REMOVE_FROM_FAVOURITES";
 
 export const addProducts = (products: IProduct[]) => ({
     type: ADD_PRODUCTS, payload: products
-})
-
-export const getCurrentUser = (user: IUser) => ({
-    type: GET_CURRENT_USER, payload: user
 })
 
 export const searchProduct = (name: string) => ({

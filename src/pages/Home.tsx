@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {Container} from "../components/UI/Container";
 import styled from "styled-components";
 import logo from '/assets/icons/color-logo.png'
-import {IProduct, IUser} from "../types/types";
+import {IProduct} from "../types/types";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import location from '/assets/icons/location.svg'
 import Search from "../components/UI/Search";
@@ -16,7 +16,7 @@ const Home: FC = () => {
 
     const dispatch = useDispatch();
     const searchTerm = useTypedSelector(state => state.productsReducer.searchTerm);
-    const user: IUser = useTypedSelector(state => state.productsReducer.currentUser)
+    const userLocation: string = useTypedSelector(state => state.userReducer.user.location)
 
     const productsList: IProduct[] = useTypedSelector(
         (state) => state.productsReducer.products
@@ -35,7 +35,7 @@ const Home: FC = () => {
             <Header>
                 <Logo src={logo} alt='logo'/>
                 <Location>
-                    {user.location}
+                    {userLocation}
                 </Location>
                 <Search value={searchTerm} onChange={handleInputChange} placeholder='Пошук в магазині'/>
                 <Banner src={banner}/>

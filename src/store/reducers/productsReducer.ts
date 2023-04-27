@@ -2,19 +2,13 @@ import {ProductsActionTypes, ProductsState} from "../../types/types";
 import {
     ADD_PRODUCTS,
     ADD_TO_CART, ADD_TO_FAVOURITES, CLEAR_CART,
-    GET_CURRENT_USER, REMOVE_FROM_CART, REMOVE_FROM_FAVOURITES, REMOVE_ONE_ITEM_FROM_CART,
+    REMOVE_FROM_CART, REMOVE_FROM_FAVOURITES, REMOVE_ONE_ITEM_FROM_CART,
     SEARCH_PRODUCT,
 } from "./productsActions";
 
 
 const initialState: ProductsState = {
     products: [],
-    currentUser: {
-        id: null,
-        username: '',
-        location: '',
-        email: ''
-    },
     searchTerm: '',
     cart: {
         items: [],
@@ -27,9 +21,6 @@ export const productsReducer = (state = initialState, action: ProductsActionType
     switch (action.type) {
         case ADD_PRODUCTS: {
             return {...state, products: action.payload}
-        }
-        case GET_CURRENT_USER: {
-            return {...state, currentUser: action.payload}
         }
         case SEARCH_PRODUCT:
             return {

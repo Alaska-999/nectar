@@ -1,6 +1,5 @@
 import {
-    ADD_PRODUCTS, ADD_TO_CART, ADD_TO_FAVOURITES, CLEAR_CART,
-    GET_CURRENT_USER, REMOVE_FROM_CART, REMOVE_FROM_FAVOURITES, REMOVE_ONE_ITEM_FROM_CART,
+    ADD_PRODUCTS, ADD_TO_CART, ADD_TO_FAVOURITES, CLEAR_CART, REMOVE_FROM_CART, REMOVE_FROM_FAVOURITES, REMOVE_ONE_ITEM_FROM_CART,
     SEARCH_PRODUCT
 } from "../store/reducers/productsActions";
 import {LOG_OUT, SET_AUTH, SET_USER} from "../store/reducers/userActions";
@@ -53,7 +52,6 @@ export interface CartState {
 //productsState
 export interface ProductsState {
     products: IProduct[],
-    currentUser: IUser,
     searchTerm: string,
     cart: CartState,
     favorites: IProductLink[]
@@ -62,11 +60,6 @@ export interface ProductsState {
 interface IAddProductsAction {
     type: typeof ADD_PRODUCTS;
     payload: IProduct[];
-}
-
-interface IGetCurrentUserAction {
-    type: typeof GET_CURRENT_USER;
-    payload: IUser;
 }
 
 interface ISearchAction {
@@ -113,7 +106,6 @@ interface IRemoveFromFavourites {
 
 export type ProductsActionTypes =
     IAddProductsAction
-    | IGetCurrentUserAction
     | ISearchAction
     | IAddToCart
     | IRemoveFromCart

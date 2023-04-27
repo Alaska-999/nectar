@@ -1,7 +1,6 @@
 import {userActionTypes, UserState} from "../../types/types";
 import {LOG_OUT, SET_AUTH, SET_USER} from "./userActions";
 
-
 const initialState: UserState = {
     isAuth: false,
     user: {
@@ -10,7 +9,6 @@ const initialState: UserState = {
         location: '',
         phone: ''
     }
-
 }
 
 export const userReducer = (state = initialState, action: userActionTypes) => {
