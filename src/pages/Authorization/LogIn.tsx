@@ -94,7 +94,7 @@ const LogIn = () => {
                         <Input type={showPassword ? 'text' : 'password'} onChange={passwordChangeHandler}/>
 
                         {
-                            error && errorMessagePassword ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
+                            error && errorMessagePassword ? <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та верхнього регістру</ErrorMessage> : ''
                         }
                         <Eye type="button" onClick={handleToggleShowPassword}/>
                     </Label>
