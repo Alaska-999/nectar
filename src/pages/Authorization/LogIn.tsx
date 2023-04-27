@@ -82,7 +82,7 @@ const LogIn = () => {
             <Content>
                 <Logo src={logo} alt='logo'/>
                 <Heading>Вхід у аккаунт</Heading>
-                <Info>Введіть свою електронну пошту та пароль</Info>
+                <Info>Введіть свій номер телефону та пароль</Info>
                 <Form onSubmit={logInHandler}>
                     <Label>Номер телефону
                         <Input onChange={phoneChangeHandler} type='text'/>
