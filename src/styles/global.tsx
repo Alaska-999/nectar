@@ -25,7 +25,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    
     margin: 0;
     padding: 0;
     outline: 0;
@@ -48,14 +47,12 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 500;
 
     background-color: #FCFCFC;
-    
   }
 
   h3 {
     font-size: 26px;
     line-height: 42px;
   }
- 
 `
 
 export const Heading = styled.h3`
@@ -63,5 +60,6 @@ export const Heading = styled.h3`
   margin: 0 auto 30px;
 `
 
-
 export default GlobalStyle;
+
+

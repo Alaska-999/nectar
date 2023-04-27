@@ -41,7 +41,7 @@ const SignIn = () => {
         if (e.target.value === '') {
             setUsername('');
         } else {
-            const usernameRegex = /^[a-zA-Z0-9_А-Яа-яІіЇїЄєҐґ\s]{5,20}$/u;
+            const usernameRegex = /^[a-zA-Z0-9_А-Яа-яІіЇїЄєҐґ\s]{5,30}$/u;
             if (usernameRegex.test(e.target.value)) {
                 setUsername(e.target.value);
                 setErrorMessageUsername(false);
