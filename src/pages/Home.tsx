@@ -10,6 +10,7 @@ import banner from '/assets/images/banner.jpg'
 import {useDispatch} from "react-redux";
 import {searchProduct} from "../store/reducers/productsActions";
 import ProductsList from "../components/ProductsList";
+import {AppName, Logo, Top} from "../styles/global";
 
 
 const Home: FC = () => {
@@ -33,7 +34,7 @@ const Home: FC = () => {
     return (
         <Container>
             <Header>
-                <Logo src={logo} alt='logo'/>
+                <Top><Logo src={logo} alt='logo'/> <AppName>nectar</AppName></Top>
                 <Location>
                     {userLocation}
                 </Location>
@@ -53,10 +54,7 @@ const Header = styled.div`
   flex-direction: column;
 `
 
-const Logo = styled.img`
-  width: 27px;
-  height: 31px;
-`
+
 
 const Location = styled.div`
   margin: 13px auto 20px;

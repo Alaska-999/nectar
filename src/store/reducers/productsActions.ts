@@ -1,13 +1,12 @@
 import {ICartProduct, IProduct, IProductLink} from "../../types/types";
 
 export const ADD_PRODUCTS = 'ADD_PRODUCTS';
-export const GET_CURRENT_USER = 'GET_CURRENT_USER';
-export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
 export const ADD_TO_CART = "ADD_TO_CART";
 export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
-export const REMOVE_ONE_ITEM_FROM_CART = "REMOVE_ONE_ITEM_FROM_CART";
-export const CLEAR_CART = "CLEAR_CART";
 export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";
+export const REMOVE_ONE_ITEM_FROM_CART = "REMOVE_ONE_ITEM_FROM_CART";
+export const SEARCH_PRODUCT = 'SEARCH_PRODUCT';
+export const CLEAR_CART = "CLEAR_CART";
 export const REMOVE_FROM_FAVOURITES = "REMOVE_FROM_FAVOURITES";
 
 

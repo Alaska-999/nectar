@@ -59,6 +59,22 @@ export const Heading = styled.h3`
   text-align: center;
   margin: 0 auto 30px;
 `
+export const Top = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+`
+export const Logo = styled.img`
+  width: 27px;
+  height: 31px;
+`
+export const AppName = styled.div`
+  font-family: "Roboto-Medium", sans-serif;
+  margin-left: 8px;
+  padding-top: 5px;
+  color: var(--green);
+  font-size: 20px;
+`
 
 export default GlobalStyle;
 

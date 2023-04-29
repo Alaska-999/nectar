@@ -7,14 +7,14 @@ import {Container} from '../components/UI/Container';
 import styled from "styled-components";
 import avatar from '/assets/images/userAvatar.png'
 import {useTypedSelector} from "../hooks/useTypedSelector";
-// import {Background} from "./Authorization/Auth";
 import support from '/assets/images/telegram.png'
 import {Background} from "./Authorization/LogIn";
+import {AppName, Logo, Top} from "../styles/global";
+import logo from '/assets/icons/color-logo.png'
 
 const Account = () => {
 
     const user = useTypedSelector(state => state.userReducer.user)
-
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -23,12 +23,11 @@ const Account = () => {
         navigate('/auth')
     }
 
-    console.log(user.phone)
-
     return (
         <Container>
             <Background/>
             <Content>
+                <Top><Logo src={logo} alt='logo'/> <AppName>nectar</AppName></Top>
                 <UserInfo>
                     <Avatar src={avatar}/>
                     <UserName>{user.username}</UserName>
@@ -51,7 +50,7 @@ const Content = styled.div`
 
 `
 const UserInfo = styled.div`
-  margin: 10px auto 10px;
+  margin: 25px auto 10px;
   text-align: center;
   z-index: 10;
 
