@@ -8,6 +8,8 @@ import styled from "styled-components";
 import avatar from '/assets/images/userAvatar.png'
 import {useTypedSelector} from "../hooks/useTypedSelector";
 import support from '/assets/images/telegram.png'
+import phone from '/assets/images/phone.png'
+import email from '/assets/images/email.webp'
 import {Background} from "./Authorization/LogIn";
 import {AppName, Logo, Top} from "../styles/global";
 import logo from '/assets/icons/color-logo.png'
@@ -35,8 +37,10 @@ const Account = () => {
                 </UserInfo>
                 <Button onClick={logOutHandler}>Вийти з аккаунту</Button>
                 <Support>
-                    <Subtitle>Маєте питання?</Subtitle>
+                    <Subtitle>Маєте питання? Зв'яжіться з нами</Subtitle>
                     <Heading>Служба піддтримки у Telegram <Link src={support}/></Heading>
+                    <Heading>+380954769264 <Link src={phone}/></Heading>
+                    <Heading>nectar@gmail.com <Link src={email}/></Heading>
                 </Support>
             </Content>
         </Container>
@@ -85,13 +89,14 @@ const Subtitle = styled.div`
 `
 const Heading = styled.div`
   font-size: 22px;
+  margin-bottom: 15px;
 `
 const Link = styled.img`
   width: 35px;
   height: 35px;
   position: relative;
   top: 8px;
-  left: 10px;
+  left: 5px;
   cursor: pointer;
 `
 
