@@ -817,6 +817,188 @@
       "image": "/assets/products/veggies/zuccini.png",
       "category": "vegetables",
       "price": 18
+    },
+    {
+      "id" : 55,
+      "name": "Бургер Garden Gourmet",
+      "amount": "226 г",
+      "details": "Соковитий, неймовірно ніжний, справжній м'ясний смак - і повністю на рослинній основі! На вигляд і смак котлета дуже схожа на яловичий бургер, а тому ідеально підходить для людей, які дотримуються режиму харчування.",
+      "nutritious": {
+        "proteins": "9 г",
+        "fats": "13 г",
+        "carbohydrates": "26 г",
+        "calorieContent": "260 ккал"
+      },
+      "image": "/assets/products/meet&fish/burger.webp",
+      "category": "meat",
+      "price": 80
+    },
+    {
+      "id" : 56,
+      "name": "Фрикадельки Beyond MEAT",
+      "amount": "200 г",
+      "details": "Соковиті фрикадельки на овочевій основі з відтінком італійських спецій чудово поєднуються з багатьма смачними стравами і готуються дуже швидко.",
+      "nutritious": {
+        "proteins": "17 г",
+        "fats": "14 г",
+        "carbohydrates": "11 г",
+        "calorieContent": "230 ккал"
+      },
+      "image": "/assets/products/meet&fish/meatballs.png",
+      "category": "meat",
+      "price": 100
+    },
+    {
+      "id" : 57,
+      "name": "Фарш Beyond MEAT",
+      "amount": "200 г",
+      "details": "М'ясний смак, консистенція та універсальність. З перевагами для довкілля, здоров'я та тварин, які пропонує рослинний білок.",
+      "nutritious": {
+        "proteins": "18 г",
+        "fats": "14 г",
+        "carbohydrates": "3 г",
+        "calorieContent": "220 ккал"
+      },
+      "image": "/assets/products/meet&fish/mince.webp",
+      "category": "meat",
+      "price": 70
+    },
+
+    {
+      "id" : 58,
+      "name": "Happea м'ясні шматочки",
+      "amount": "100 г",
+      "details": "Веганський замінник м'яса на основі польової квасолі та гороху - ідеальна альтернатива. Проявіть творчість, приготувавши веганські шашлики, гіроси або гуляш.",
+      "nutritious": {
+        "proteins": "16 г",
+        "fats": "2 г",
+        "carbohydrates": "10 г",
+        "calorieContent": "76 ккал"
+      },
+      "image": "/assets/products/meet&fish/pieces.webp",
+      "category": "meat",
+      "price": 55
+    },
+    {
+      "id" : 59,
+      "name": "Соєвий гуляш",
+      "amount": "100 г",
+      "details": "У соєвому м'ясі міститься стільки ж білків, як і в звичайному. Але при цьому в продукті зовсім немає жирів. Це ідеальний варіант для тих, хто худне, переходить на рослинну дієту і прагне вести здоровий спосіб життя. Соєві продукти міцно влаштувалися в раціоні прихильників правильного харчування.",
+      "nutritious": {
+        "proteins": "40 г",
+        "fats": "2 г",
+        "carbohydrates": "15 г",
+        "calorieContent": "263 ккал"
+      },
+      "image": "/assets/products/meet&fish/soy1.jpg",
+      "category": "meat",
+      "price": 13
+    },
+    {
+      "id" : 60,
+      "name": "Соєвий биток",
+      "amount": "100 г",
+      "details": "У соєвому м'ясі міститься стільки ж білків, як і в звичайному. Але при цьому в продукті зовсім немає жирів. Це ідеальний варіант для тих, хто худне, переходить на рослинну дієту і прагне вести здоровий спосіб життя. Соєві продукти міцно влаштувалися в раціоні прихильників правильного харчування.",
+      "nutritious": {
+        "proteins": "50 г",
+        "fats": "1 г",
+        "carbohydrates": "17 г",
+        "calorieContent": "380 ккал"
+      },
+      "image": "/assets/products/meet&fish/soy2.jpg",
+      "category": "meat",
+      "price": 15
+    },
+    {
+      "id" : 61,
+      "name": "Соєвий фарш",
+      "amount": "100 г",
+      "details": "У соєвому м'ясі міститься стільки ж білків, як і в звичайному. Але при цьому в продукті зовсім немає жирів. Це ідеальний варіант для тих, хто худне, переходить на рослинну дієту і прагне вести здоровий спосіб життя. Соєві продукти міцно влаштувалися в раціоні прихильників правильного харчування.",
+      "nutritious": {
+        "proteins": "50 г",
+        "fats": "2 г",
+        "carbohydrates": "17 г",
+        "calorieContent": "308 ккал"
+      },
+      "image": "/assets/products/meet&fish/soy3.jpg",
+      "category": "meat",
+      "price": 55
+    },
+    {
+      "id" : 63,
+      "name": "Інжир",
+      "amount": "200 г",
+      "details": "Інжир - це плід, що містить велику кількість білків, вуглеводів, калію, кальцію, магнію та фосфору. Інжир можна вживати як самостійно, так і використовувати для готування різних страв та десертів.",
+      "nutritious": {
+        "proteins": "0.8 г",
+        "fats": "0.4 г",
+        "carbohydrates": "19 г",
+        "calorieContent": "74 ккал"
+      },
+      "image": "/assets/products/dried_fruits/inzhyr.webp",
+      "category": "suhofrukty",
+      "price": 9
+    },
+
+    {
+      "id" : 64,
+      "name": "Чорнослив",
+      "amount": "200 г",
+      "details": "Чорнослив - це сушені на сонці сливи, які мають високу концентрацію вітаміну А, К, Е, а також магнію, калію, заліза та дієтичних волокон. Його можна вживати як самостійно, так і використовувати для готування супів, вінегретів та салатів.",
+      "nutritious": {
+        "proteins": "2.3 г",
+        "fats": "0.4 г",
+        "carbohydrates": "57 г",
+        "calorieContent": "240 ккал"
+      },
+      "image": "/assets/products/dried_fruits/chornosliv.jpg",
+      "category": "suhofrukty",
+      "price": 65
+    },
+    {
+      "id" : 65,
+      "name": "Ізюм",
+      "amount": "100 г",
+      "details": "Ізюм - це сушені виноградні ягоди, багаті на антиоксиданти, вітаміни та мінерали. Його можна вживати як самостійно, так і використовувати для готування різних страв та десертів.",
+      "nutritious": {
+        "proteins": "2.5 г",
+        "fats": "0.5 г",
+        "carbohydrates": "64 г",
+        "calorieContent": "264 ккал"
+      },
+      "image": "/assets/products/dried_fruits/izyum.jpg",
+      "category": "suhofrukty",
+      "price": 35
+    },
+    {
+      "id" : 66,
+      "name": "Сушена диня",
+      "amount": "100 г",
+      "details": "Сушена диня - це ласощі, що містить велику кількість антиоксидантів, вітамінів та мінералів. Це хороший вибір для тих, хто хоче поживну та смачну альтернативу цукеркам.",
+      "nutritious": {
+        "proteins": "2.8 г",
+        "fats": "0.5 г",
+        "carbohydrates": "69 г",
+        "calorieContent": "296 ккал"
+      },
+      "image": "/assets/products/dried_fruits/dry_melon.jpg",
+      "category": "suhofrukty",
+      "price": 65
+    },
+    {
+      "id" : 67,
+      "name": "Курага",
+      "amount": "100 г",
+      "details": "Курага - це сушені абрикоси, які містять велику кількість вітамінів та мінералів. Крім того, курага містить рослинні волокна, які сприяють нормальному функціонуванню кишечнику та зменшують ризик захворювань на серцево-судинні захворювання.",
+      "nutritious": {
+        "proteins": "5.2 г",
+        "fats": "0.3 г",
+        "carbohydrates": "57 г",
+        "calorieContent": "231 ккал"
+      },
+      "image": "/assets/products/dried_fruits/kuraga.png",
+      "category": "suhofrukty",
+      "price": 45
     }
   ]
 }

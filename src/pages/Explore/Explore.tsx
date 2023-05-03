@@ -8,6 +8,8 @@ import beans from '/public/assets/categories/beans.png'
 import berries from '/public/assets/categories/berries.png'
 import nuts from '/public/assets/categories/nuts.png'
 import oil from '/public/assets/categories/oil.png'
+import meat from '/public/assets/categories/meet1.png'
+import suhofrukty from '/public/assets/categories/driedfruits.png'
 import Navigation from "../../components/Navigation";
 import {Link} from "react-router-dom";
 
@@ -29,12 +31,12 @@ const Explore: FC = () => {
                               image={fruits}
                               rgbColor={'247, 165, 147'}/>
                 </CategoryLink>
-
-                <CategoryLink to='/explore/:oils'>
-                    <Category name={'Олія та масло'}
-                              image={oil}
+                <CategoryLink to='/explore/:suhofrukty'>
+                    <Category name={"Сухофрукти"}
+                              image={suhofrukty}
                               rgbColor={'248, 164, 76'}/>
                 </CategoryLink>
+
 
                 <CategoryLink to='/explore/:berries'>
                     <Category name={'Сезонні ягоди'}
@@ -53,6 +55,18 @@ const Explore: FC = () => {
                               image={beans}
                               rgbColor={'253, 229, 152'}/>
                 </CategoryLink>
+                <CategoryLink to='/explore/:meat'>
+                    <Category name={"Рослинне м'ясо"}
+                              image={meat}
+                              rgbColor={'83, 177, 117'}/>
+                </CategoryLink>
+                <CategoryLink to='/explore/:oils'>
+                    <Category name={'Олія та масло'}
+                              image={oil}
+                              rgbColor={'247, 165, 147'}
+                    />
+                </CategoryLink>
+
             </Categories>
             <Navigation/>
         </Container>
