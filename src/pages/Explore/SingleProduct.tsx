@@ -127,7 +127,7 @@ const SingleProduct: FC<IProduct> = ({
                 </Details>
             </Info>
             <ButtonWrapper>
-                <Button onClick={addToCartHandler}>Додати в корзину</Button>
+                <Button onClick={addToCartHandler}>Додати до кошика</Button>
             </ButtonWrapper>
         </Container>
     );

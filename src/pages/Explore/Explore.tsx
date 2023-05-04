@@ -21,7 +21,7 @@ const Explore: FC = () => {
             <Categories>
 
                 <CategoryLink to='/explore/:vegetables'>
-                    <Category name={'Свіжі овочі'}
+                    <Category name={'Овочі'}
                               image={veg}
                               rgbColor={'83, 177, 117'}/>
                 </CategoryLink>

@@ -193,6 +193,7 @@ export const Eye = styled.button`
   position: absolute;
   top: 35px;
   right: 10px;
+  z-index:100;
   ::after {
     content: url(${eye});
   }
