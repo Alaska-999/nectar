@@ -97,14 +97,12 @@ const LogIn = () => {
                     <Label>Пароль
                         <Eye type="button" onClick={handleToggleShowPassword}/>
                         <Input type={showPassword ? 'text' : 'password'} onChange={passwordChangeHandler}/>
-
-                        {
-                            error && errorMessagePassword ?
-                                <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та
-                                    верхнього регістру</ErrorMessage> : ''
-                        }
-
                     </Label>
+                    {
+                        error && errorMessagePassword ?
+                            <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та
+                                верхнього регістру</ErrorMessage> : ''
+                    }
                     <Button type='submit'>Увійти</Button>
                 </Form>
                 <RedirectWrapper>
@@ -162,7 +160,6 @@ export const ErrorMessage = styled.div`
   padding-bottom: 35px;
   font-size: 18px;
   margin-top: -10px;
-
 `
 
 export const Label = styled.label`
@@ -186,15 +183,15 @@ export const Input = styled.input`
 
 
 export const Eye = styled.button`
-  width: 21px;
-  height: 21px;
+  width: 31px;
+  height: 31px;
   background-repeat: no-repeat;
   border: none;
   outline: none;
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 40px;
+  top: 35px;
   right: 10px;
   ::after {
     content: url(${eye});

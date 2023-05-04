@@ -124,14 +124,12 @@ const SignIn = () => {
                             error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
                     </Label>
-                    <Label>Пароль
+                    <Label>Пароль <Eye type="button" onClick={handleToggleShowPassword}/>
                         <Input type={showPassword ? 'text' : 'password'} onChange={passwordChangeHandler}/>
-
-                        {
-                            error && errorMessagePassword ? <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та верхнього регістру</ErrorMessage> : ''
-                        }
-                        <Eye type="button" onClick={handleToggleShowPassword}/>
                     </Label>
+                    {
+                        error && errorMessagePassword ? <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та верхнього регістру</ErrorMessage> : ''
+                    }
                     <Button type='submit'>Увійти</Button>
                 </Form>
                 <RedirectWrapper>
