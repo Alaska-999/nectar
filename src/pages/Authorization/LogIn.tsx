@@ -15,7 +15,7 @@ const LogIn = () => {
 
     const [password, setPassword] = useState<string>('');
     const [showPassword, setShowPassword] = useState<boolean>(false);
-    const [phone, setPhone] = useState<string>('');
+    const [phone, setPhone] = useState<string>('+380');
 
     const [errorMessagePhone, setErrorMessagePhone] = useState<boolean>(true)
     const [errorMessagePassword, setErrorMessagePassword] = useState<boolean>(true)
@@ -28,18 +28,21 @@ const LogIn = () => {
 
 
     const phoneChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.value === '') {
-            setPhone('');
+        const inputValue = e.target.value
+         if (e.target.value === '+380') {
+            setPhone('+380');
+        }  else if (inputValue.startsWith("+380")) {
+            setPhone("+380" + inputValue.slice(4, 13));
+             const phoneRegex = /^\+380\d{1,13}$/;
+             if (phoneRegex.test(inputValue) && inputValue.length == 13) {
+                 setPhone(inputValue);
+                 setErrorMessagePhone(false);
+             } else {
+                 setErrorMessagePhone(true);
+             }
         } else {
-            const phoneRegex = /^\d{9}$/;
-            if (phoneRegex.test(e.target.value)) {
-                setPhone(e.target.value);
-                setErrorMessagePhone(false);
-            } else {
-                setErrorMessagePhone(true);
-            }
         }
-    }
+    };
 
 
     const passwordChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -69,7 +72,7 @@ const LogIn = () => {
                 id,
                 'Крістіна Гаранчук',
                 'Kiyv',
-                '0966735903'
+                phone
             ))
 
         } else {
@@ -86,8 +89,7 @@ const LogIn = () => {
                 <Info>Введіть свій номер телефону та пароль</Info>
                 <Form onSubmit={logInHandler}>
                     <Label>Номер телефону
-                        <PhoneNum>+380</PhoneNum>
-                        <Input onChange={phoneChangeHandler} type='text' paddingLeft='47px'/>
+                        <Input onChange={phoneChangeHandler} type='text' value={phone}/>
                         {
                             error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
@@ -96,7 +98,9 @@ const LogIn = () => {
                         <Input type={showPassword ? 'text' : 'password'} onChange={passwordChangeHandler}/>
 
                         {
-                            error && errorMessagePassword ? <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та верхнього регістру</ErrorMessage> : ''
+                            error && errorMessagePassword ?
+                                <ErrorMessage>Пароль має містити принаймні 6 символів, 1 цифру, по 1 букві нижнього та
+                                    верхнього регістру</ErrorMessage> : ''
                         }
                         <Eye type="button" onClick={handleToggleShowPassword}/>
                     </Label>
@@ -164,19 +168,10 @@ export const Label = styled.label`
   font-size: 18px;
   color: var(--grey);
   position: relative;
-
 `
 
-export const PhoneNum = styled.div`
-  position: absolute;
-  top: 2.67rem;
-  font-size: 20px;
-  font-weight: 500;
-`
-interface InputProps {
-    paddingLeft?: string;
-}
-export const Input = styled.input<InputProps>`
+export const Input = styled.input`
+  position: relative;
   border: none;
   width: 100%;
   border-bottom: 1px solid #E2E2E2;
@@ -186,8 +181,8 @@ export const Input = styled.input<InputProps>`
   font-weight: 500;
   padding-bottom: 11px;
   padding-top: 20px;
-  padding-left: ${(props) => props.paddingLeft};
 `
+
 
 export const Eye = styled.button`
   width: 21px;

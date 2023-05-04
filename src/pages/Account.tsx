@@ -33,7 +33,7 @@ const Account = () => {
                 <UserInfo>
                     <Avatar src={avatar}/>
                     <UserName>{user.username}</UserName>
-                    <Phone>+38{user.phone}</Phone>
+                    <Phone>{user.phone}</Phone>
                 </UserInfo>
                 <Button onClick={logOutHandler}>Вийти з аккаунту</Button>
                 <Support>

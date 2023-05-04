@@ -12,7 +12,8 @@ import {
     Info,
     Input,
     Label,
-    Logo, PhoneNum, Redirect,
+    Logo,
+    Redirect,
     RedirectWrapper
 } from "./LogIn";
 import {setAuth, setUser} from "../../store/reducers/userActions";
@@ -24,7 +25,7 @@ const SignIn = () => {
 
     const [username, setUsername] = useState<string>("");
     const [password, setPassword] = useState<string>('');
-    const [phone, setPhone] = useState<string>('');
+    const [phone, setPhone] = useState("+380");
 
     const [showPassword, setShowPassword] = useState<boolean>(false);
 
@@ -66,18 +67,21 @@ const SignIn = () => {
     }
 
     const phoneChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.value === '') {
-            setPhone('');
-        } else {
-            const phoneRegex = /^\d{10,12}$/;
-            if (phoneRegex.test(e.target.value)) {
-                setPhone(e.target.value);
+        const inputValue = e.target.value
+        if (e.target.value === '+380') {
+            setPhone('+380');
+        }  else if (inputValue.startsWith("+380")) {
+            setPhone("+380" + inputValue.slice(4, 13));
+            const phoneRegex = /^\+380\d{1,13}$/;
+            if (phoneRegex.test(inputValue) && inputValue.length == 13) {
+                setPhone(inputValue);
                 setErrorMessagePhone(false);
             } else {
                 setErrorMessagePhone(true);
             }
+        } else {
         }
-    }
+    };
 
     const navigateHome = useNavigate()
     const dispatch = useDispatch()
@@ -115,8 +119,7 @@ const SignIn = () => {
                         }
                     </Label>
                     <Label>Номер телефону
-                        <PhoneNum>+380</PhoneNum>
-                        <Input onChange={phoneChangeHandler} type='text' paddingLeft='47px'/>
+                        <Input onChange={phoneChangeHandler} type='text' value={phone} />
                         {
                             error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
