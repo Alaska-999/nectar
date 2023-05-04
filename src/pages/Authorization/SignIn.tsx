@@ -12,7 +12,7 @@ import {
     Info,
     Input,
     Label,
-    Logo, Redirect,
+    Logo, PhoneNum, Redirect,
     RedirectWrapper
 } from "./LogIn";
 import {setAuth, setUser} from "../../store/reducers/userActions";
@@ -69,7 +69,7 @@ const SignIn = () => {
         if (e.target.value === '') {
             setPhone('');
         } else {
-            const phoneRegex = /^\d{10}$/;
+            const phoneRegex = /^\d{10,12}$/;
             if (phoneRegex.test(e.target.value)) {
                 setPhone(e.target.value);
                 setErrorMessagePhone(false);
@@ -115,7 +115,8 @@ const SignIn = () => {
                         }
                     </Label>
                     <Label>Номер телефону
-                        <Input onChange={phoneChangeHandler} type='text'/>
+                        <PhoneNum>+380</PhoneNum>
+                        <Input onChange={phoneChangeHandler} type='text' paddingLeft='47px'/>
                         {
                             error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }

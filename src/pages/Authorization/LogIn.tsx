@@ -31,7 +31,7 @@ const LogIn = () => {
         if (e.target.value === '') {
             setPhone('');
         } else {
-            const phoneRegex = /^\d{10}$/;
+            const phoneRegex = /^\d{9}$/;
             if (phoneRegex.test(e.target.value)) {
                 setPhone(e.target.value);
                 setErrorMessagePhone(false);
@@ -40,6 +40,7 @@ const LogIn = () => {
             }
         }
     }
+
 
     const passwordChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.value === '') {
@@ -85,7 +86,8 @@ const LogIn = () => {
                 <Info>Введіть свій номер телефону та пароль</Info>
                 <Form onSubmit={logInHandler}>
                     <Label>Номер телефону
-                        <Input onChange={phoneChangeHandler} type='text'/>
+                        <PhoneNum>+380</PhoneNum>
+                        <Input onChange={phoneChangeHandler} type='text' paddingLeft='47px'/>
                         {
                             error && errorMessagePhone ? <ErrorMessage>Невірний формат</ErrorMessage> : ''
                         }
@@ -158,12 +160,23 @@ export const ErrorMessage = styled.div`
 
 `
 
-export const Label = styled.div`
+export const Label = styled.label`
   font-size: 18px;
   color: var(--grey);
+  position: relative;
+
 `
 
-export const Input = styled.input`
+export const PhoneNum = styled.div`
+  position: absolute;
+  top: 2.67rem;
+  font-size: 20px;
+  font-weight: 500;
+`
+interface InputProps {
+    paddingLeft?: string;
+}
+export const Input = styled.input<InputProps>`
   border: none;
   width: 100%;
   border-bottom: 1px solid #E2E2E2;
@@ -173,6 +186,7 @@ export const Input = styled.input`
   font-weight: 500;
   padding-bottom: 11px;
   padding-top: 20px;
+  padding-left: ${(props) => props.paddingLeft};
 `
 
 export const Eye = styled.button`
